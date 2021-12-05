@@ -1,81 +1,156 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>todaycast</title>
     <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-</head>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .today_cast {
+        position: relative;
+        border: 1px solid black;
+        width: 755px;
+        padding: 10px;
+      }
+      .today_cast > h3 {
+        border-bottom: 2px solid #444;
+        padding: 0 0 10px 12px;
+        margin-bottom: 20px;
+      }
+      .today_cast > ul {
+        margin-left: 23px;
+        overflow: hidden;
+      }
+      .today_cast > ul > li {
+        float: left;
+        width: 127px;
+      }
+      .today_cast > ul > li + li {
+        margin-left: 19px;
+      }
+      .today_cast > ul > li > a > img {
+        padding: 3px;
+        border: 1px solid #e4e4e4;
+      }
+      .today_cast > ul > li > a > * {
+        display: block;
+      }
+      .today_cast > ul > li > a > strong {
+        margin: 5px 0 1px;
+      }
+      .today_cast > .page {
+        position: absolute;
+        top: 13px;
+        left: auto;
+        right: 28px;
+        bottom: auto;
+      }
+      .today_cast > .page > * {
+        float: left;
+      }
+      .today_cast > .page > span {
+        margin: 2px 7px 0 0;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      .today_cast > .page > a.next {
+        margin-left: -1px;
+      }
+      .naver_desc {
+        border: 2px solid black;
+        padding: 20px;
+      }
+      .naver_desc > .sev {
+        border: 4px solid gray;
+        padding: 10px;
+        color: black;
+      }
+      .naver_desc > .sev.best {
+        border-color: red;
+      }
+      .naver_desc > .sev + .sev {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
 
-<body>
-<div class="today_cast">
-	<h3><img src="images/h3_todaycast.gif" alt="오늘의 네이버캐스트" /></h3>
+  <body>
+    <div class="today_cast">
+      <h3><img src="images/h3_todaycast.gif" alt="오늘의 네이버캐스트" /></h3>
 
-	<ul>
+      <ul>
         <li>
-            <a href="">
-            	<img src="images/temp_119x64.gif" alt=""/>
-                <strong>크로아티아 전</strong>
-                <em>라벤더 향기 가득한</em>
-                <span>[유럽]</span>
-            </a>
+          <a href="">
+            <img src="images/temp_119x64.gif" alt="" />
+            <strong>크로아티아 전</strong>
+            <em>라벤더 향기 가득한</em>
+            <span>[유럽]</span>
+          </a>
         </li>
         <li>
-            <a href="">
-                <img src="images/temp_119x64.gif" alt=""/>
-                <strong>크로아티아 전</strong>
-                <em>라벤더 향기 가득한</em>
-                <span>[유럽]</span>
-            </a>
+          <a href="">
+            <img src="images/temp_119x64.gif" alt="" />
+            <strong>크로아티아 전</strong>
+            <em>라벤더 향기 가득한</em>
+            <span>[유럽]</span>
+          </a>
         </li>
         <li>
-            <a href="">
-                <img src="images/temp_119x64.gif" alt=""/>
-                <strong>크로아티아 전</strong>
-                <em>라벤더 향기 가득한</em>
-                <span>[유럽]</span>
-            </a>
+          <a href="">
+            <img src="images/temp_119x64.gif" alt="" />
+            <strong>크로아티아 전</strong>
+            <em>라벤더 향기 가득한</em>
+            <span>[유럽]</span>
+          </a>
         </li>
         <li>
-            <a href="">
-                <img src="images/temp_119x64.gif" alt=""/>
-                <strong>크로아티아 전</strong>
-                <em>라벤더 향기 가득한</em>
-                <span>[유럽]</span>
-            </a>
+          <a href="">
+            <img src="images/temp_119x64.gif" alt="" />
+            <strong>크로아티아 전</strong>
+            <em>라벤더 향기 가득한</em>
+            <span>[유럽]</span>
+          </a>
         </li>
         <li>
-            <a href="">
-                <img src="images/temp_119x64.gif" alt=""/>
-                <strong>크로아티아 전</strong>
-                <em>라벤더 향기 가득한</em>
-                <span>[유럽]</span>
-            </a>
+          <a href="">
+            <img src="images/temp_119x64.gif" alt="" />
+            <strong>크로아티아 전</strong>
+            <em>라벤더 향기 가득한</em>
+            <span>[유럽]</span>
+          </a>
         </li>
-    </ul>
-        
-    <div class="page">
+      </ul>
+
+      <div class="page">
         <span>1/8</span>
-        <a href="" class="prev"><img src="images/btn_page_prev.gif" alt="이전"/></a>
-        <a href="" class="next"><img src="images/btn_page_next.gif" alt="다음"/></a>
+        <a href="" class="prev"
+          ><img src="images/btn_page_prev.gif" alt="이전"
+        /></a>
+        <a href="" class="next"
+          ><img src="images/btn_page_next.gif" alt="다음"
+        /></a>
+      </div>
+      <img
+        src="./todaycast.jpg"
+        style="position: fixed; top: 20px; left: 20px; opacity: 0.5"
+      />
     </div>
-</div>
-</body>
+
+    <div class="naver_desc">
+      <div class="sev">
+        라벤더 향기 가득한라벤더 향기 가득한라벤더 향기 가득한
+      </div>
+      <div class="sev best">
+        라벤더 향기 가득한라벤더 향기 가득한라벤더 향기 가득한
+      </div>
+      <div class="sev">
+        라벤더 향기 가득한라벤더 향기 가득한라벤더 향기 가득한
+      </div>
+      <div class="sev">
+        라벤더 향기 가득한라벤더 향기 가득한라벤더 향기 가득한
+      </div>
+    </div>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
